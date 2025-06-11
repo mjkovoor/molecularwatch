@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'molecularwatch'
+    metrics_path: /metrics
+    scheme: https
+    static_configs:
+      - targets: ['https://molecularwatch-service-j72z7na3bq-uc.a.run.app']
